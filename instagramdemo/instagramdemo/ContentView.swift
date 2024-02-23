@@ -71,16 +71,20 @@ struct ContentView: View {
                             .font(.footnote)
                             .fontWeight(.semibold)
                             .foregroundStyle(.white)
+                            .padding(.top, 8)
                         Text("**Cyberpunk_Dolphin** Tough match last night. ")
                             .foregroundStyle(.white)
                             .font(.footnote)
+                            .padding(.vertical, 4)
                         Text("Last night")
                             .font(.caption)
                             .foregroundStyle(.white
                             )
+                            .padding(.bottom, 8)
                     })
                     Spacer()
                 }
+                .padding(.horizontal, 8)
             }
         }
     }
