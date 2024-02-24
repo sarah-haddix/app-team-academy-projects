@@ -16,7 +16,7 @@ struct ContentView: View {
                     Image("cyberpunkdolphin")
                         .resizable()
                         .clipShape(/*@START_MENU_TOKEN@*/Circle()/*@END_MENU_TOKEN@*/)
-                        .frame(width: 50, height: 50)
+                        .frame(width: 40, height: 40)
                     Text("Cyberpunk_Dolphin")
                         .font(.subheadline)
                         .fontWeight(.bold)
@@ -64,15 +64,16 @@ struct ContentView: View {
                     
                 }
                 .padding(.horizontal, 8)
+                .padding(.vertical, 2)
                 //TODO: Fix spacing
                 HStack{
                     VStack (alignment: .leading, content: {
-                        Text("1,000,000 Likes")
+                        Text("1,000,000,000,000,000 Likes")
                             .font(.footnote)
                             .fontWeight(.semibold)
                             .foregroundStyle(.white)
-                            .padding(.top, 8)
-                        Text("**Cyberpunk_Dolphin** Tough match last night. ")
+                            .padding(.top, 1)
+                        Text("**Cyberpunk_Dolphin** Tough match last night. We'll get'em next time")
                             .foregroundStyle(.white)
                             .font(.footnote)
                             .padding(.vertical, 4)
