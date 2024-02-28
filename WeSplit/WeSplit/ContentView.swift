@@ -5,8 +5,9 @@
 //  Created by Sarah Haddix on 2/23/24.
 //
 
-///Questions:
-///
+/// Questions:
+/// When I make the type of the picker .pickerStyle(.navigationLink), it says it's incompatible with MacOS. If you want to implement a feature like this, what do you use? Do you still use .navigationLink, or do you use something else that is also compatible with MacOS?
+/// The .keyboardType(.decimalPad) does not work for me. How do you accomplish this keyboard type?
 
 
 import SwiftUI
