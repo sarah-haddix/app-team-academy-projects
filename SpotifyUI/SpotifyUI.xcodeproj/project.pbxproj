@@ -11,6 +11,7 @@
 		6E4904072B903E7F0020B9EE /* ContentView.swift in Sources */ = {isa = PBXBuildFile; fileRef = 6E4904062B903E7F0020B9EE /* ContentView.swift */; };
 		6E4904092B903E800020B9EE /* Assets.xcassets in Resources */ = {isa = PBXBuildFile; fileRef = 6E4904082B903E800020B9EE /* Assets.xcassets */; };
 		6E49040D2B903E800020B9EE /* Preview Assets.xcassets in Resources */ = {isa = PBXBuildFile; fileRef = 6E49040C2B903E800020B9EE /* Preview Assets.xcassets */; };
+		6E4904182B9062370020B9EE /* AltSong.swift in Sources */ = {isa = PBXBuildFile; fileRef = 6E4904172B9062370020B9EE /* AltSong.swift */; };
 /* End PBXBuildFile section */
 
 /* Begin PBXFileReference section */
@@ -20,6 +21,7 @@
 		6E4904082B903E800020B9EE /* Assets.xcassets */ = {isa = PBXFileReference; lastKnownFileType = folder.assetcatalog; path = Assets.xcassets; sourceTree = "<group>"; };
 		6E49040A2B903E800020B9EE /* SpotifyUI.entitlements */ = {isa = PBXFileReference; lastKnownFileType = text.plist.entitlements; path = SpotifyUI.entitlements; sourceTree = "<group>"; };
 		6E49040C2B903E800020B9EE /* Preview Assets.xcassets */ = {isa = PBXFileReference; lastKnownFileType = folder.assetcatalog; path = "Preview Assets.xcassets"; sourceTree = "<group>"; };
+		6E4904172B9062370020B9EE /* AltSong.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = AltSong.swift; sourceTree = "<group>"; };
 /* End PBXFileReference section */
 
 /* Begin PBXFrameworksBuildPhase section */
@@ -55,6 +57,7 @@
 				6E4904042B903E7F0020B9EE /* SpotifyUIApp.swift */,
 				6E4904062B903E7F0020B9EE /* ContentView.swift */,
 				6E4904082B903E800020B9EE /* Assets.xcassets */,
+				6E4904172B9062370020B9EE /* AltSong.swift */,
 				6E49040A2B903E800020B9EE /* SpotifyUI.entitlements */,
 				6E49040B2B903E800020B9EE /* Preview Content */,
 			);
@@ -139,6 +142,7 @@
 			isa = PBXSourcesBuildPhase;
 			buildActionMask = 2147483647;
 			files = (
+				6E4904182B9062370020B9EE /* AltSong.swift in Sources */,
 				6E4904072B903E7F0020B9EE /* ContentView.swift in Sources */,
 				6E4904052B903E7F0020B9EE /* SpotifyUIApp.swift in Sources */,
 			);

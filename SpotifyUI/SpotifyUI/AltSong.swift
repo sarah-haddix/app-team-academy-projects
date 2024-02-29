@@ -1,19 +1,13 @@
 //
-//  ContentView.swift
+//  AltSong.swift
 //  SpotifyUI
 //
-//  Created by Sarah Haddix on 2/28/24.
+//  Created by Sarah Haddix on 2/29/24.
 //
-
-/// Questions: I tried to make the code work on any screensize using information I found at: https://designcode.io/swiftui-handbook-detect-screen-size. I'm not like 100% sure how it works so just let me know if you're supposed to do this differently.
-
-//TODO: Array of different song structs each with color, picture, name, artist, changes on fast-forward click
-//TODO: Make name scrolling if it doesn't fit
-//TODO: add to questions page - does group wrapper work differenly with applying modifiers than say, HStack. How to override a modifier?
 
 import SwiftUI
 
-struct ContentView: View {
+struct AltSongView: View {
     var body: some View {
         ZStack {
             GeometryReader { proxy in
@@ -26,7 +20,7 @@ struct ContentView: View {
                                 .frame(width: 18, height: 18)
                                 .foregroundStyle(.white)
                             Spacer()
-                            Text("\"common people\" in Search")
+                            Text("Sophie")
                                 .foregroundStyle(.white)
                                 .font(.caption)
                                 .fontWeight(.bold)
@@ -40,7 +34,7 @@ struct ContentView: View {
                     }
                     .padding(.horizontal, proxy.size.width/17)
                     Spacer()
-                    Image("commonPeopleCover")
+                    Image("endOfBeginningCover")
                         .resizable()
                         .scaledToFit()
                         .frame(width: proxy.size.width * (15/17))
@@ -48,11 +42,11 @@ struct ContentView: View {
                     Spacer()
                     HStack {
                         VStack {
-                            Text("Common People - Full")
+                            Text("End of Beginning")
                                 .frame(maxWidth: .infinity, alignment: .leading)
                                 .font(.title2)
                                 .fontWeight(.bold)
-                            Text("Pulp")
+                            Text("Djo")
                                 .opacity(/*@START_MENU_TOKEN@*/0.8/*@END_MENU_TOKEN@*/)
                                 .frame(maxWidth: .infinity, alignment: .leading)
                                 .fontWeight(.semibold)
@@ -91,9 +85,9 @@ struct ContentView: View {
                     }
                     
                     HStack {
-                        Text("2:01")
+                        Text("0:53")
                         Spacer()
-                        Text("3:50")
+                        Text("1:45")
                     }
                     .foregroundStyle(.white)
                     .opacity(/*@START_MENU_TOKEN@*/0.8/*@END_MENU_TOKEN@*/)
@@ -154,12 +148,13 @@ struct ContentView: View {
                 }
                 .padding(.vertical)
                 .frame(width: proxy.size.width, height: proxy.size.height)
-                    .background(LinearGradient(gradient: Gradient(colors: [.brown1, .brown2]), startPoint: .topLeading, endPoint: .bottomTrailing))
+                    .background(LinearGradient(gradient: Gradient(colors: [.blue1, .blue2]), startPoint: .topLeading, endPoint: .bottomTrailing))
             }
         }
     }
 }
 
 #Preview {
-    ContentView()
+    AltSongView()
 }
+
