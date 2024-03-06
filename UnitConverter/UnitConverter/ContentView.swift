@@ -106,7 +106,7 @@ struct ContentView: View {
             convertToFeet = amount * 12
         case "foot":
             convertToFeet = amount
-        case "shakle":
+        case "shackle":
             convertToFeet = amount / (15*3*2)
         case "spindle":
             convertToFeet = amount / (43200)
@@ -144,7 +144,7 @@ struct ContentView: View {
             return convertToFeet / 12
         case "foot":
             return convertToFeet
-        case "shakle":
+        case "shackle":
             return convertToFeet * 3 * 2 * 15
         case "spindle":
             return convertToFeet * (1/2) * 3 * (1/2) * 5 * 96 * 120
