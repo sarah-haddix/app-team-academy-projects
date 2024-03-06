@@ -16,7 +16,7 @@ struct ContentView: View {
         return Double(thingToConvertString) ?? 0.0
     }
     
-    var units = [["inch", "foot", "finger", "spindle"], ["skein", "furlong", "poppyseed", "barleycorn"], ["ell", "fathom", "league", "shaftment"], ["twip", "mile", "nautical mile", "roman mile"]]
+    var units = [["inch", "foot", "shackle", "spindle"], ["skein", "furlong", "poppyseed", "barleycorn"], ["ell", "fathom", "league", "shaftment"], ["twip", "mile", "nautical mile", "roman mile"]]
     
     let columns: [GridItem] = Array(repeating: .init(.flexible()), count: 4)
     
