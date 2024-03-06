@@ -103,37 +103,37 @@ struct ContentView: View {
         
         switch selectedInputUnit {
         case "inch":
-            convertToFeet = amount * 12
+            convertToFeet = amount / 12
         case "foot":
             convertToFeet = amount
         case "shackle":
-            convertToFeet = amount / (15*3*2)
+            convertToFeet = amount * (15*3*2)
         case "spindle":
-            convertToFeet = amount / (43200)
+            convertToFeet = amount * (43200)
         case "skein":
-            convertToFeet = amount / (360)
+            convertToFeet = amount * (360)
         case "furlong":
-            convertToFeet = amount / (10*11*2*3)
+            convertToFeet = amount * (10*11*2*3)
         case "poppyseed":
-            convertToFeet = amount * (4*3*12)
+            convertToFeet = amount / (4*3*12)
         case "barleycorn":
-            convertToFeet = amount * (3*12)
+            convertToFeet = amount / (3*12)
         case "ell":
-            convertToFeet = amount * (4/15)
+            convertToFeet = amount / (4/15)
         case "fathom":
-            convertToFeet = amount / (2*3)
+            convertToFeet = amount * (2*3)
         case "league":
-            convertToFeet = amount / (3*1680)
+            convertToFeet = amount * (3*1680)
         case "shaftment":
-            convertToFeet = amount * 2
+            convertToFeet = amount / 2
         case "twip":
-            convertToFeet = amount * (20*6*12*12)
+            convertToFeet = amount / (20*6*12*12)
         case "mile":
-            convertToFeet = amount / (1760*3)
+            convertToFeet = amount * (1760*3)
         case "nautical mile":
-            convertToFeet = amount / 6080
+            convertToFeet = amount * 6080
         case "roman mile":
-            convertToFeet = amount / (50*5*4*5)
+            convertToFeet = amount * (50*5*4*5)
         default:
             convertToFeet = 0.0
         }
@@ -141,37 +141,37 @@ struct ContentView: View {
         //convert to desired unit
         switch selectedOutputUnit {
         case "inch":
-            return convertToFeet / 12
+            return convertToFeet * 12
         case "foot":
             return convertToFeet
         case "shackle":
-            return convertToFeet * 3 * 2 * 15
+            return convertToFeet / (3 * 2 * 15)
         case "spindle":
-            return convertToFeet * (1/2) * 3 * (1/2) * 5 * 96 * 120
+            return convertToFeet / ( 3 * 5 * 96 * 30)
         case "skein":
-            return convertToFeet * (1/2) * 3 * (1/2) * 5 * 96
+            return convertToFeet / (1/2) * 3 * (1/2) * 5 * 96
         case "furlong":
-            return convertToFeet * 3 * 2 * 11 * 10
+            return convertToFeet / 3 * 2 * 11 * 10
         case "poppyseed":
-            return convertToFeet / (12*3*4)
+            return convertToFeet * (12*3*4)
         case "barleycorn":
-            return convertToFeet / (12*3)
+            return convertToFeet * (12*3)
         case "ell":
-            return convertToFeet * (1/2) * 3 * (1/2) * 5
+            return convertToFeet / (1/2) * 3 * (1/2) * 5
         case "fathom":
-            return convertToFeet * 3 * 2
+            return convertToFeet / 3 * 2
         case "league":
-            return convertToFeet * 6080 * 3
+            return convertToFeet / 6080 * 3
         case "shaftment":
-            return convertToFeet / 2
+            return convertToFeet * 2
         case "twip":
-            return convertToFeet / (12*12*6*20)
+            return convertToFeet * (12*12*6*20)
         case "mile":
-            return convertToFeet * 3 * 1760
+            return convertToFeet / (3 * 1760)
         case "nautical mile":
-            return convertToFeet * 6080
+            return convertToFeet / 6080
         case "roman mile":
-            return convertToFeet * 5 * 4 * 5 * 50
+            return convertToFeet / (5 * 4 * 5 * 50)
         default:
             return 0.0
         }
